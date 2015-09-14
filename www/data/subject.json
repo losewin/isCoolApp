@@ -1,0 +1,39 @@
+[
+    {
+    	"id" : 1,
+        "code" : "IT43",
+        "name" : "Elective 2",
+        "unit" : "4.0",
+        "schedule" : [
+                "Th 7:30 AM - 10:30 AM / 9-302(CIIT Lab[45])",
+                "MF 9:00 AM - 10:30 AM / 9-105(ICT 1Flr/Rm5)"
+            ]
+    }, {
+    	"id" : 2,
+        "code" : "IT43",
+        "name" : "Elective 1",
+        "unit" : "4.0",
+        "schedule" : [
+                "Th 7:30 AM - 10:30 AM / 9-302(CIIT Lab[45])",
+                "MF 9:00 AM - 10:30 AM / 9-105(ICT 1Flr/Rm5)"
+            ]
+    }, {
+    	"id" : 3,
+        "code" : "IT43",
+        "name" : "CCNA 2",
+        "unit" : "4.0",
+        "schedule" : [
+                "Th 7:30 AM - 10:30 AM / 9-302(CIIT Lab[45])",
+                "MF 9:00 AM - 10:30 AM / 9-105(ICT 1Flr/Rm5)"
+            ]
+    }, {
+    	"id" : 4,
+        "code" : "IT43",
+        "name" : "System Analysis & Design",
+        "unit" : "4.0",
+        "schedule" : [
+                "Th 7:30 AM - 10:30 AM / 9-302(CIIT Lab[45])",
+                "MF 9:00 AM - 10:30 AM / 9-105(ICT 1Flr/Rm5)"
+            ]
+    }
+]

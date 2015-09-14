@@ -1,0 +1,12 @@
+<ion-view view-title="Manual Attendace">
+    <ion-content class="has-header">
+        <ul class="list">
+            <li class="item item-checkbox" ng-repeat="student in listStudent">
+                <label class="checkbox">
+                    <input type="checkbox">
+                </label>
+                {{student.fullname}}
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>

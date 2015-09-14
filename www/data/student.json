@@ -1,0 +1,172 @@
+[
+    {
+        "id" : 1,
+        "barcode" : "2012101759",
+        "fullname" : "Al Lestaire Acasio",
+        "avatar" : "",
+        "emergenctnum" : "09265634331",
+        "yearlevel" : "4th",
+        "section" : "R3",
+        "record" : {
+            "quizes" : [ "12/20", "10/20", "40/50"],
+            "project" : [ "50/100" ],
+            "labActivity" : [ "20/20", "10/10", "30/30" ]
+        }
+    }, {
+        "id" : 1,
+        "barcode" : "2012101759",
+        "fullname" : "Karl Allan Avanceña",
+        "avatar" : "",
+        "emergenctnum" : "09265634331",
+        "yearlevel" : "4th",
+        "section" : "R3",
+        "record" : {
+            "quizes" : [ "12/20", "10/20", "40/50"],
+            "project" : [ "50/100" ],
+            "labActivity" : [ "20/20", "10/10", "30/30" ]
+        }
+    }, {
+        "id" : 1,
+        "barcode" : "2012101759",
+        "fullname" : "Mary Ciolina Branzuela",
+        "avatar" : "",
+        "emergenctnum" : "09265634331",
+        "yearlevel" : "4th",
+        "section" : "R3",
+        "record" : {
+            "quizes" : [ "12/20", "10/20", "40/50"],
+            "project" : [ "50/100" ],
+            "labActivity" : [ "20/20", "10/10", "30/30" ]
+        }
+    }, {
+        "id" : 1,
+        "barcode" : "2012101759",
+        "fullname" : "April Marie Bandivas",
+        "avatar" : "",
+        "emergenctnum" : "09265634331",
+        "yearlevel" : "4th",
+        "section" : "R3",
+        "record" : {
+            "quizes" : [ "12/20", "10/20", "40/50"],
+            "project" : [ "50/100" ],
+            "labActivity" : [ "20/20", "10/10", "30/30" ]
+        }
+    }, {
+        "id" : 1,
+        "barcode" : "2012101759",
+        "fullname" : "John Alfred Catampo",
+        "avatar" : "",
+        "emergenctnum" : "09265634331",
+        "yearlevel" : "4th",
+        "section" : "R3",
+        "record" : {
+            "quizes" : [ "12/20", "10/20", "40/50"],
+            "project" : [ "50/100" ],
+            "labActivity" : [ "20/20", "10/10", "30/30" ]
+        }
+    }, {
+        "id" : 1,
+        "barcode" : "2012101759",
+        "fullname" : "John Webster Ceballos",
+        "avatar" : "",
+        "emergenctnum" : "09265634331",
+        "yearlevel" : "4th",
+        "section" : "R3",
+        "record" : {
+            "quizes" : [ "12/20", "10/20", "40/50"],
+            "project" : [ "50/100" ],
+            "labActivity" : [ "20/20", "10/10", "30/30" ]
+        }
+    }, {
+        "id" : 1,
+        "barcode" : "2012101759",
+        "fullname" : "Jerome Pacana",
+        "avatar" : "",
+        "emergenctnum" : "09265634331",
+        "yearlevel" : "4th",
+        "section" : "R3",
+        "record" : {
+            "quizes" : [ "12/20", "10/20", "40/50"],
+            "project" : [ "50/100" ],
+            "labActivity" : [ "20/20", "10/10", "30/30" ]
+        }
+    }, {
+        "id" : 1,
+        "barcode" : "2012101759",
+        "fullname" : "Jonela Generosa",
+        "avatar" : "",
+        "emergenctnum" : "09265634331",
+        "yearlevel" : "4th",
+        "section" : "R3",
+        "record" : {
+            "quizes" : [ "12/20", "10/20", "40/50"],
+            "project" : [ "50/100" ],
+            "labActivity" : [ "20/20", "10/10", "30/30" ]
+        }
+    }, {
+        "id" : 1,
+        "barcode" : "2012101759",
+        "fullname" : "Larry Paul Lague",
+        "avatar" : "",
+        "emergenctnum" : "09265634331",
+        "yearlevel" : "4th",
+        "section" : "R3",
+        "record" : {
+            "quizes" : [ "12/20", "10/20", "40/50"],
+            "project" : [ "50/100" ],
+            "labActivity" : [ "20/20", "10/10", "30/30" ]
+        }
+    }, {
+        "id" : 1,
+        "barcode" : "2012101759",
+        "fullname" : "Daril Dalit",
+        "avatar" : "",
+        "emergenctnum" : "09265634331",
+        "yearlevel" : "4th",
+        "section" : "R3",
+        "record" : {
+            "quizes" : [ "12/20", "10/20", "40/50"],
+            "project" : [ "50/100" ],
+            "labActivity" : [ "20/20", "10/10", "30/30" ]
+        }
+    }, {
+        "id" : 1,
+        "barcode" : "2012101759",
+        "fullname" : "Jeb Luza",
+        "avatar" : "",
+        "emergenctnum" : "09265634331",
+        "yearlevel" : "4th",
+        "section" : "R3",
+        "record" : {
+            "quizes" : [ "12/20", "10/20", "40/50"],
+            "project" : [ "50/100" ],
+            "labActivity" : [ "20/20", "10/10", "30/30" ]
+        }
+    }, {
+        "id" : 1,
+        "barcode" : "2012101759",
+        "fullname" : "Axel Cordova",
+        "avatar" : "",
+        "emergenctnum" : "09265634331",
+        "yearlevel" : "4th",
+        "section" : "R3",
+        "record" : {
+            "quizes" : [ "12/20", "10/20", "40/50"],
+            "project" : [ "50/100" ],
+            "labActivity" : [ "20/20", "10/10", "30/30" ]
+        }
+    }, {
+        "id" : 1,
+        "barcode" : "2012101759",
+        "fullname" : "Danica Pacana",
+        "avatar" : "",
+        "emergenctnum" : "09265634331",
+        "yearlevel" : "4th",
+        "section" : "R3",
+        "record" : {
+            "quizes" : [ "12/20", "10/20", "40/50"],
+            "project" : [ "50/100" ],
+            "labActivity" : [ "20/20", "10/10", "30/30" ]
+        }
+    }
+]
