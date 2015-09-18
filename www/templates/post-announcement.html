@@ -1,0 +1,25 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-balanced">
+        <h1 class="title">Annoucement</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="closeAnnoucement()">Close</button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <form ng-submit="doPostAnnouncement()">
+            <div class="list">
+                <label class="item item-input">
+                    <textarea cols="30" rows="5" placeholder="Type a post here!"></textarea>
+                </label>
+                <label class="item item-input">
+                    <input type="file" placeholder="File here">
+                </label>
+                <label class="item">
+                    <button class="button button-block button-positive" type="submit">
+                        POST <i class="icon ion-ios-paperplane"></i>
+                    </button>
+                </label>
+            </div>
+        </form>
+    </ion-content>
+</ion-modal-view>

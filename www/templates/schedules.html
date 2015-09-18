@@ -1,0 +1,13 @@
+<ion-view view-title="Class Schedules">
+	<ion-header-bar align-title="left" class="bar-positive">
+		<h1 class="title">Total: {{order.total | currency}}, Items {{order.items.length}}</h1>
+	</ion-header-bar>
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="sched in schedules" href="#/app/schedules/{{sched.id}}">
+	        <h2><b>{{sched.name}}</b></h2>
+	        <span ng-repeat="schedule in sched.schedule">{{schedule}}</br></span>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

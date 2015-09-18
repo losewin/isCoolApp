@@ -1,17 +1,35 @@
-<ion-view view-title="{{subjectInfo.title}}">
-    <ion-content class="has-header">
-        <div class="padding">
-            <div class="button-bar">
-                <a href="#/attendance/camera" class="button button-outline button-positive icon-left ion-home">
-                    Student
+<ion-view view-title="Subject Records">
+    <div class="bar bar-subheader bar-calm">
+        <h2 class="title">{{scheInfo.code}} {{scheInfo.name}} ({{scheInfo.unit}})</h2>
+    </div>
+    <ion-content class="has-subheader padding">
+        <div class="row">
+            <div class="col col-33">
+                <a class="item item-avatar" href="#/app/students">
+                  Students
                 </a>
-                <a href="#/student-record" class="button button-outline button-positive icon-left ion-folder">Record</a>
-                <a href="#/announcement" class="button button-outline button-positive icon-left ion-email">Announce</a>
             </div>
-            <div class="button-bar">
-                <a href="" class="button button-outline button-positive icon-left ion-compose">Sub class</a>
-                <a href="#/task" class="button button-outline button-positive icon-left ion-help-buoy">Task</a>
-                <a href="#/settings" class="button button-outline button-positive icon-left ion-gear-b">Setting</a>
+            <div class="col col-33">
+                <a class="item item-avatar" href="#/app/announcement">
+                  Announcement
+                </a>
+            </div>
+            <div class="col col-33">
+                <a class="item item-avatar" href="#">
+                    Sub Classes
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-50">
+                <a class="item item-avatar" href="#/app/task">
+                    Task
+                </a>
+            </div>
+            <div class="col col-50">
+                <a class="item item-avatar" href="#">
+                    Settings
+                </a>
             </div>
         </div>
     </ion-content>

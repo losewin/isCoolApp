@@ -1,0 +1,26 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-balanced">
+        <h1 class="title">Add Task</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="closeTask()">Close</button>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <form ng-submit="doTask()">
+            <div class="list">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Title</span>
+                    <input type="text" placeholder="Task title here!" ng-model="postData.title">
+                </label>
+                <label class="item item-input">
+                    <textarea cols="30" rows="5" placeholder="Type a post here!" ng-model="postData.text"></textarea>
+                </label>
+                <label class="item">
+                    <button class="button button-block button-positive" type="submit">
+                        POST TASK <i class="icon ion-ios-paperplane"></i>
+                    </button>
+                </label>
+            </div>
+        </form>
+    </ion-content>
+</ion-modal-view>
