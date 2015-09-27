@@ -1,8 +1,37 @@
+<ion-nav-bar class="bar-assertive"> 
+    <ion-nav-buttons side="right">
+        <a class="button button-clear" nav-direction="forward" ng-href="#/app/schedules"><i class="icon ion-home"></i></a>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="left">
+        <button class="button back-button buttons button-clear header-item" nav-direction="forward" ng-click="$ionicGoBack()">
+            <i class="icon ion-android-arrow-back"></i>
+            <span class="back-text"></span>
+        </button>
+    </ion-nav-buttons>
+</ion-nav-bar>
 <ion-view view-title="Students">
-	<ion-nav-buttons side="right">
-		<a class="button button-clear" ng-href="#/app/schedules"><i class="icon ion-home"></i></a>
-	</ion-nav-buttons>
-    <ion-content class="padding">
-        Students
+    <ion-content>
+        <ion-tabs class="tabs-icon-top tabs-striped tabs-color-active-assertive slide-left-right reverse">
+            <ion-tab title="Status"
+                icon-on="ion-ios-camera"
+                icon-off="ion-ios-camera-outline"
+                nav-direction="forward"
+                href="#/students/scanbarcode">
+                <ion-nav-view animation="slide-left-right" name="scan-barcode"></ion-nav-view>
+            </ion-tab>
+            <ion-tab title="Manual"
+                icon-on="ion-android-checkmark-circle"
+                icon-off="ion-android-checkmark-circle"
+                nav-direction="forward"
+                href="#/students/manual">
+                <ion-nav-view animation="slide-left-right" name="manual"></ion-nav-view>
+            </ion-tab>
+            <ion-tab title="Students"
+                icon-on="ion-android-clipboard"
+                icon-off="ion-android-clipboard"
+                nav-direction="forward"
+                href="#/students/active-students">
+                <ion-nav-view animation="slide-left-right" name="active-students"></ion-nav-view>
+        </ion-tabs>
     </ion-content>
 </ion-view>

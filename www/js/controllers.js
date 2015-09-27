@@ -54,6 +54,54 @@ app.controller('PlaylistsCtrl', function($scope) {
 })
 
 app.controller('PlaylistCtrl', function($scope, $stateParams) {
-});
+})
+
+.controller('isCoolTasksCtrl', function($scope) {
+  $scope.tasks = [
+    { title: 'Grades', name: 'grade',id: 1 , icon: 'ion-clipboard'},
+    { title: 'Syllabus', name: 'syllabus', id: 2 , icon: 'ion-ios-list'},
+    { title: 'Announcements', name: 'announce',id: 3, icon: 'ion-speakerphone' },
+    { title: 'Discussions', name:'discuss', id: 4, icon: 'ion-chatbox-working' },
+   
+  ];
+})
+
+.controller('isCoolGradeCtrl', function($scope, $stateParams) {
+  $scope.grade = [
+    {
+      id: 1,  title: 'Grados'
+    }
+  ]
+})
+.controller('isCoolSyllabusCtrl', function($scope, $stateParams) {
+  $scope.syllabus = [
+       {
+      id: 2,  title: 'Syllas'
+    }
+  ]
+})
+.controller('isCoolAnnounceCtrl', function($scope, $stateParams) {
+  $scope.announce = [
+   
+    {
+      id: 3,  title: 'Announces'
+    }
+  ]
+})
+.controller('isCoolDiscussCtrl', function($scope, $stateParams) {
+  $scope.discuss = [
+    
+    {
+      id: 4,  title: 'Discusss'
+    }
+  ]
+})
+.controller("IndexCtrl", ['$rootScope', "$scope", "$stateParams", "$q", "$location", "$window", '$timeout', 
+      function($rootScope, $scope, $stateParams, $q, $location, $window, $timeout){
+          $scope.onSlideMove = function(data){
+        alert("You have selected " + data.index + " tab");
+      };
+        }
+        ]);
 
 })()

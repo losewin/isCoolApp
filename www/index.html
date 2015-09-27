@@ -7,6 +7,7 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="lib/tabslide/tabSlideBox.css" rel="stylesheet">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -24,7 +25,7 @@
   </head>
 
   <body ng-app="iscoolapp">
-    <ion-nav-view></ion-nav-view>
+    <ion-nav-view animation="slide-left-right-ios7"></ion-nav-view>
 
 <!-- CONTROLLER -->
   <script type="text/javascript" src="js/controller/schedule.controller.js"></script>
@@ -36,6 +37,11 @@
   <script type="text/javascript" src="js/service/schedule.service.js"></script>
   <script type="text/javascript" src="js/service/student.service.js"></script>
   <script type="text/javascript" src="js/service/task.service.js"></script>
+  <script type="text/javascript" src="js/service/user.factory.js"></script>
+
+  <!-- LIBRARIES -->
+  <script type="text/javascript" src="lib/ionic/js/angular/angular-resource.min.js"></script>
+  <script type="text/javascript" src="lib/tabslide/tabSlideBox.js"></script>
 
   </body>
 </html>

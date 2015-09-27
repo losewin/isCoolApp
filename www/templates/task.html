@@ -1,16 +1,9 @@
 <ion-view view-title="Task">
-	<ion-nav-buttons side="right">
-		<button class="button button-clear" ng-click="openTask()"><i class="icon ion-android-add-circle"></i></button>
-        <a class="button button-clear" ng-href="#/app/schedules"><i class="icon ion-home"></i></a>
-	</ion-nav-buttons>
-    <ion-content class="padding">
-        <ul class="list">
-            <li class="item item-checkbox" ng-repeat="task in tasks">
-                <label class="checkbox">
-                    <input type="checkbox" ng-value="{{task.isDone}}" ng-checked="{{task.isDone}}">
-                </label>
-                <h2><b>{{task.title}}</b></h2>
-            </li>
-        </ul>
-    </ion-content>
+  <ion-content>
+    	<ion-list >
+      		<ion-item ng-repeat="t in taskdetail"  class="item item-icon-left"> 
+   			 <a class="icon icon-color {{ t.id}}">{{ t.id }}</a> 
+      		</ion-item>
+    	</ion-list>
+  </ion-content>
 </ion-view>

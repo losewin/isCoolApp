@@ -1,0 +1,16 @@
+ <ion-view view-title="Subject Records {{scheInfo.code}}">
+	<ion-nav-title>
+	    {{scheInfo.code}} {{scheInfo.name}} ({{scheInfo.unit}})
+	</ion-nav-title>
+  <ion-content>
+    <ion-list >
+      <ion-item class="item item-icon-left" nav-direction="forward" href="#/students/scanbarcode">
+        <a class="icon icon-color ion-android-people"></a>
+        Students
+      </ion-item>
+      <ion-item ng-repeat="task in tasks" class="item item-icon-left" href="#/app/tasks/{{ task.name }}"> 
+    		<a class="icon icon-color {{task.icon}}"></a> {{ task.title }} 
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

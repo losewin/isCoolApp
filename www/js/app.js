@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-var app = angular.module('iscoolapp', ['ionic'])
+var app = angular.module('iscoolapp', ['ionic', 'ngResource', 'tabSlideBox'])
 
 app.run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -22,7 +22,9 @@ app.run(function($ionicPlatform) {
   });
 })
 
-app.config(function($stateProvider, $urlRouterProvider) {
+app.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
+  $httpProvider.defaults.useXDomain = true;
+  delete $httpProvider.defaults.headers.common['X-Requested-With'];
   $stateProvider
 
     .state('app', {
@@ -63,37 +65,85 @@ app.config(function($stateProvider, $urlRouterProvider) {
     url: '/schedules/:schedID',
     views: {
       'menuContent': {
-        templateUrl: 'templates/subject-menu.html',
+        templateUrl: 'templates/tasks.html',
         controller: 'SubjectCtrl'
       }
     }
   })
-  .state('app.students', {
+  // .state('app.announcement', {
+  //   url: '/announcement',
+  //   views: {
+  //     'menuContent': {
+  //       templateUrl: 'templates/announcement.html',
+  //       controller : 'AnnoucementCtrl'
+  //     }
+  //   }
+  // })
+  .state('tab-student', {
     url: '/students',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/students.html'
-      }
-    }
+    abstract: true,
+    templateUrl: 'templates/students.html'
   })
-  .state('app.announcement', {
-    url: '/announcement',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/announcement.html',
-        controller : 'AnnoucementCtrl'
+    .state('tab-student.scanstudentbarcode', {
+      url: '/scanbarcode',
+      views: {
+        'scan-barcode': {
+          templateUrl: 'templates/tabs/attendance-barcode.html'
+        }
       }
-    }
-  })
-  .state('app.task', {
-    url: '/task',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/task.html',
-        controller : 'TaskCtrl'
+    })
+    .state('tab-student.manual', {
+      url: '/manual',
+      views: {
+        'manual': {
+          templateUrl: 'templates/tabs/attendance-manual.html'
+        }
       }
-    }
-  });
+    })
+    .state('tab-student.activestudents', {
+      url: '/active-students',
+      views: {
+        'active-students': {
+          templateUrl: 'templates/tabs/attendance-activestudent.html'
+        }
+      }
+    })
+    .state('app.grade', {
+      url: '/tasks/grade',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/grade.html',
+          controller: 'isCoolGradeCtrl'
+        }
+      }
+    })
+    .state('app.syllabus', {
+      url: '/tasks/syllabus',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/syllabus.html',
+          controller: 'isCoolSyllabusCtrl'
+        }
+      }
+    })
+    .state('app.announce', {
+      url: '/tasks/announce',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/announce.html',
+          controller: 'isCoolAnnounceCtrl'
+        }
+      }
+    })
+    .state('app.discuss', {
+      url: '/tasks/discuss',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/discuss.html',
+          controller: 'isCoolDiscussCtrl'
+        }
+      }
+    });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/schedules');
 });

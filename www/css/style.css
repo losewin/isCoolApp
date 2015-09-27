@@ -1,1 +1,44 @@
 /* Empty. Add your own CSS if you like */
+.icon-color {
+	color:orange;
+}
+.align-mid {
+	text-align: center;
+}
+
+.fade-in-out.ng-enter, .fade-in-out .ng-enter {
+  -webkit-animation: fadeIn 0.3s;
+  -moz-animation: fadeIn 0.3s;
+  animation: fadeIn 0.3s;
+  position: absolute; }
+.fade-in-out.ng-leave, .fade-in-out .ng-leave {
+  -webkit-animation: fadeOut 0.3s;
+  -moz-animation: fadeOut 0.3s;
+  animation: fadeOut 0.3s;
+  position: absolute; }
+
+.slider-slide h3{
+	color:#fff;
+	margin-top:10px;
+}
+.scroll{
+	height:100%;
+}
+
+.tabbed-slidebox .tsb-icons:after{
+	display:none;
+}
+
+.chat-item.ng-enter {
+    -webkit-animation: fadeInLeft 1s;
+    animation: fadeInLeft 1s;
+}
+
+.chat-item.ng-enter-stagger {
+  -webkit-animation-delay:200ms;
+  animation-delay:200ms;
+ 
+  /* override to make sure it's not inherited from other styles */
+  -webkit-animation-duration:0;
+  animation-duration:0;
+}

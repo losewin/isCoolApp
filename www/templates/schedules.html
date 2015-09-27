@@ -4,9 +4,10 @@
 	</ion-header-bar>
   <ion-content>
     <ion-list>
-      <ion-item ng-repeat="sched in schedules" href="#/app/schedules/{{sched.id}}">
+      <ion-item ng-repeat="sched in schedules" class="item-icon-right" href="#/app/schedules/{{sched.id}}">
 	        <h2><b>{{sched.name}}</b></h2>
 	        <span ng-repeat="schedule in sched.schedule">{{schedule}}</br></span>
+          <i class="icon ion-chevron-right icon-accessory"></i>
       </ion-item>
     </ion-list>
   </ion-content>
